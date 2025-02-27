@@ -1,19 +1,96 @@
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>微信群邀请码</title>
     <style>
+        :root {
+            --bg-color: #1a1c19;
+            --text-color: white;
+            --accent-color: green;
+            --button-bg-color: #4CAF50;
+            --font-family: 'Microsoft YaHei', sans-serif; /* 添加中文字体 */
+            --heading-font-size: 4em;
+            --subheading-font-size: 2em;
+            --button-font-size: 1.2em;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1, h2, h3 {
+            color: var(--accent-color);
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-size: var(--heading-font-size);
+        }
+
+        h2 {
+            font-size: var(--subheading-font-size);
+        }
+
+        h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
         .show-image {
-            width: 100%;
+            width: 80%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--button-bg-color);
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: var(--button-font-size);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            font-size: 0.8em;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: lightgreen;
         }
     </style>
 </head>
-<body style="background: #1a1c19;">
-    <h1 style="color: green;font-size: 8em;margin-block-start: 0.67em;">Ingress prime</h1>
-    <h2 style="color: green;font-size: 4em;margin-block-start: 0.67em;">扫码跳至山东ENL微信二维码</h2>
-    <img src="/sharecode.png" alt="" class="show-image"/>
+<body>
+    <main>
+        <h1>Ingress Prime</h1>
+        <h2>Enlightened</h2>
+        <h3>山东ENL微信游戏接待群</h3>
+        <div>
+            <a href="https://h5.clewm.net/?url=qr61.cn%2Fov6zBe%2Fq7Dqd0D" class="button-link">点此或扫码跳至微信群</a>
+        </div>
+        <img src="/sharecode.png" alt="山东ENL微信群二维码" class="show-image" loading="lazy">
+    </main>
+    <footer>
+        项目地址：<a href="https://github.com/adinlead/WxInvitation">GitHub</a>
+    </footer>
 </body>
-<footer>
-项目地址：<a href="https://github.com/adinlead/WxInvitation">GitHub</a>
-</footer>
 </html>
